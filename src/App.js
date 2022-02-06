@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import styles from "./App.module.css";
 
 function App() {
    const [loading, setLoading] = useState(true);
@@ -37,7 +38,7 @@ function App() {
    };
 
    return (
-      <div>
+      <div className={styles.main}>
          <h1>The Coins! ({coins.length})</h1>
          {loading ? <strong>Loading...</strong> : null}
          <form onSubmit={onSubmit}>
