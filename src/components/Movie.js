@@ -2,12 +2,12 @@ import propTypes from "prop-types";
 import styles from "../App.module.css";
 import { Link } from "react-router-dom";
 
-function Movie({ coverImg, title, summary, rating, genres, year }) {
+function Movie({ id, coverImg, title, summary, rating, genres, year }) {
    return (
       <li className={styles.liFlex}>
          <ul>
             <h2>
-               <Link to="/movie" className={styles.stFont}>
+               <Link to={`/movie/${id}`} className={styles.stFont}>
                   {title}
                </Link>
             </h2>
@@ -17,8 +17,8 @@ function Movie({ coverImg, title, summary, rating, genres, year }) {
                </li>
             ))}
             <li className={styles.pFont}>Rating : ⭐ {rating}</li>
-            <li className={styles.pFont}> Year : {year}</li>
-            <li className={styles.pFont}>Summary : {summary}</li>
+            <li className={styles.pFont}>Year : {year}</li>
+            <p className={styles.pFont}>Summary : {summary}</p>
          </ul>
          <img src={coverImg} className={styles.thumbnail} alt={title} />
       </li>
@@ -26,6 +26,7 @@ function Movie({ coverImg, title, summary, rating, genres, year }) {
 }
 
 Movie.propTypes = {
+   id: propTypes.number.isRequired,
    coverImg: propTypes.string.isRequired,
    title: propTypes.string.isRequired,
    summary: propTypes.string.isRequired,

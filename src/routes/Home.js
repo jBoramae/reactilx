@@ -36,13 +36,15 @@ function Home() {
             <ul className={styles.box}>
                {movies.map((movie, index) => (
                   <Movie
+                     key={index}
+                     id={movie.id}
                      coverImg={movie.medium_cover_image}
                      summary={movie.summary}
                      title={movie.title}
                      year={movie.year}
                      rating={movie.rating}
                      genres={movie.genres}
-                     key={index}
+                     runtime={movie.runtime}
                   />
                ))}
             </ul>

@@ -56,5 +56,6 @@
 .liFlex {
    display: flex;
    justify-content: space-between;
-   margin: 50px 10px;
+   margin: 40px 10px;
+   margin-bottom: 80px;
 }

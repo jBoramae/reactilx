@@ -6,7 +6,7 @@ function App() {
    return (
       <Router>
          <Switch>
-            <Route path="/movie">
+            <Route path="/movie/:id">
                <Detail />
             </Route>
             <Route path="/">
@@ -29,4 +29,9 @@ export default App;
  *
  * import { Link } from "react-router-dom";
  * => 브라우저 새로고침 없이 유저를 다른 페이지로 이동시켜주는 컴포넌트.
+ *
+ * <Route path="/movie/:id"> => ":id"가 parameter임.
+ *
+ * route는 path의 앞부터 일치하는 부분이 있으면 그걸로 작동하기 때문에,
+ * home route를 마지막에 작성하거나, `Route exact path="/"` 로 exact를 사용해 완전일치시킴.
  */
