@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/reactilx/static/css/main.af0b6911.css",
-    "main.js": "/reactilx/static/js/main.8f52e83c.js",
+    "main.css": "/reactilx/static/css/main.170671a0.css",
+    "main.js": "/reactilx/static/js/main.7fb6a866.js",
     "index.html": "/reactilx/index.html",
-    "main.af0b6911.css.map": "/reactilx/static/css/main.af0b6911.css.map",
-    "main.8f52e83c.js.map": "/reactilx/static/js/main.8f52e83c.js.map"
+    "main.170671a0.css.map": "/reactilx/static/css/main.170671a0.css.map",
+    "main.7fb6a866.js.map": "/reactilx/static/js/main.7fb6a866.js.map"
   },
   "entrypoints": [
-    "static/css/main.af0b6911.css",
-    "static/js/main.8f52e83c.js"
+    "static/css/main.170671a0.css",
+    "static/js/main.7fb6a866.js"
   ]
 }
