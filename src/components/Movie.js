@@ -4,24 +4,17 @@ import { Link } from "react-router-dom";
 
 function Movie({ id, coverImg, title, summary, rating, genres, year }) {
    return (
-      <li className={styles.liFlex}>
-         <ul>
-            <h2>
-               <Link to={`/movie/${id}`} className={styles.stFont}>
-                  {title}
-               </Link>
-            </h2>
-            {genres.map((genre, index2) => (
-               <li className={styles.pFont} key={index2}>
-                  ✔ {genre}
-               </li>
-            ))}
-            <li className={styles.pFont}>Rating : ⭐ {rating}</li>
-            <li className={styles.pFont}>Year : {year}</li>
-            <p className={styles.pFont}>Summary : {summary}</p>
-         </ul>
+      <div className={styles.liBox}>
+         <div>
+            <Link to={`/movie/${id}`} className={styles.stFont}>
+               {title} ({year})
+            </Link>
+            <p className={styles.para}>
+               {summary.length > 200 ? `${summary.slice(0, 200)}...` : summary}
+            </p>
+         </div>
          <img src={coverImg} className={styles.thumbnail} alt={title} />
-      </li>
+      </div>
    );
 }
 

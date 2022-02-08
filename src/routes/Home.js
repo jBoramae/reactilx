@@ -33,7 +33,7 @@ function Home() {
          {loading ? (
             <h1 className={styles.stFont}>Loading... </h1>
          ) : (
-            <ul className={styles.box}>
+            <ul className={styles.liGrid}>
                {movies.map((movie, index) => (
                   <Movie
                      key={index}

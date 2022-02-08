@@ -1,8 +1,9 @@
 import { useCallback, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import styles from "../App.module.css";
+import { Link } from "react-router-dom";
 
-function Detail({ coverImg, title, summary, rating, genres, year, runtime }) {
+function Detail() {
    const { id } = useParams();
    // <Route path="/movie/:id"> => ":id", 즉 id로 parameter를 받음
    const [loading, setLoading] = useState(true);
@@ -20,14 +21,41 @@ function Detail({ coverImg, title, summary, rating, genres, year, runtime }) {
       getDetail();
    }, [getDetail]);
 
-   console.log(detail);
+   // console.log(detail);
 
    return (
-      <div>
+      <div className={styles.main}>
          {loading ? (
-            <h1 className={(styles.stFont, styles.main)}>Loading... </h1>
+            <h1 className={styles.stFont}>Loading... </h1>
          ) : (
-            <div>로딩 끝</div>
+            <div className={styles.liFlex}>
+               <img
+                  src={detail.large_cover_image}
+                  alt={detail.title}
+                  className={styles.detailedImg}
+               />
+               <ul className={styles.detailedBox}>
+                  <li className={styles.stFont}>
+                     {detail.title} ({detail.year})
+                  </li>
+                  <p className={styles.pFont}>{detail.description_full}</p>
+                  <li className={styles.pFont}>
+                     플레이타임 : {detail.runtime}분
+                  </li>
+                  <li className={styles.pFont}>평점 : {detail.rating}점</li>
+                  <li className={styles.pFont}>장르</li>
+                  {detail.genres.map((genre, index) => (
+                     <li className={styles.pFont} key={index}>
+                        　· {genre}
+                     </li>
+                  ))}
+               </ul>
+               <button className={styles.bsBtn}>
+                  <Link to={`/movie`} className={styles.bsText}>
+                     뒤로가기
+                  </Link>
+               </button>
+            </div>
          )}
       </div>
    );
