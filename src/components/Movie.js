@@ -10,7 +10,7 @@ function Movie({ id, coverImg, title, summary, year }) {
                {title} ({year})
             </Link>
             <p className={styles.para}>
-               {summary.length > 200 ? `${summary.slice(0, 200)}...` : summary}
+               {summary.length > 160 ? `${summary.slice(0, 160)}...` : summary}
             </p>
          </div>
          <img src={coverImg} className={styles.thumbnail} alt={title} />
