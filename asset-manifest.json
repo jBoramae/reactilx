@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/reactilx/static/css/main.94303307.css",
-    "main.js": "/reactilx/static/js/main.6cb065a3.js",
+    "main.js": "/reactilx/static/js/main.96074ca5.js",
     "index.html": "/reactilx/index.html",
     "main.94303307.css.map": "/reactilx/static/css/main.94303307.css.map",
-    "main.6cb065a3.js.map": "/reactilx/static/js/main.6cb065a3.js.map"
+    "main.96074ca5.js.map": "/reactilx/static/js/main.96074ca5.js.map"
   },
   "entrypoints": [
     "static/css/main.94303307.css",
-    "static/js/main.6cb065a3.js"
+    "static/js/main.96074ca5.js"
   ]
 }
