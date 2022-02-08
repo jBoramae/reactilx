@@ -1,0 +1,10 @@
+* {
+   box-sizing: border-box; /* 페이지 사이즈에 맞게 컨텐츠 박스 사이즈를 맞춘다.*/
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   background-color: whitesmoke;
+   height: 100%;
+}
