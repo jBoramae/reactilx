@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/reatilx/static/css/main.af0b6911.css",
+    "main.js": "/reatilx/static/js/main.8f52e83c.js",
+    "index.html": "/reatilx/index.html",
+    "main.af0b6911.css.map": "/reatilx/static/css/main.af0b6911.css.map",
+    "main.8f52e83c.js.map": "/reatilx/static/js/main.8f52e83c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af0b6911.css",
+    "static/js/main.8f52e83c.js"
+  ]
+}
