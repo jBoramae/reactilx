@@ -2,7 +2,7 @@ import propTypes from "prop-types";
 import styles from "../App.module.css";
 import { Link } from "react-router-dom";
 
-function Movie({ id, coverImg, title, summary, rating, genres, year }) {
+function Movie({ id, coverImg, title, summary, year }) {
    return (
       <div className={styles.liBox}>
          <div>
